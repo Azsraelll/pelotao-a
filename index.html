@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilão</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com o título do site -->
+    <header>
+        <h1>Leilão Online</h1>
+    </header>
+
+    <!-- Seção para exibir o item do leilão -->
+    <section class="auction-item">
+        <h2>Item em Leilão: <span id="item-name">Cú do BUIU</span></h2>
+        <!-- Espaço onde a imagem do item será exibida -->
+        <div class="image-placeholder">
+            <img src="src/img/pel-a.png" alt="">
+        </div>
+
+        <!-- Preço atual do item -->
+        <p>Preço atual: R$ <span id="current-price">20.00</span></p>
+
+        <!-- Campo para inserir o valor do lance -->
+        <input type="number" id="bid-input" placeholder="Seu lance" min="0" step="0.01">
+
+        <!-- Botão para fazer o lance -->
+        <button onclick="placeBid()">Dar Lance</button>
+
+        <!-- Mensagem que será exibida quando o usuário der o maior lance -->
+        <p id="message"></p>
+
+        <!-- Seção para exibir os lances anteriores -->
+        <h3>Lances Anteriores</h3>
+        <ul id="bid-history"></ul>
+    </section>
+
+    <!-- Referência ao arquivo JavaScript -->
+    <script src="src/js/index.js"></script>
+</body>
+</html>
