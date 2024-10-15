@@ -1,3 +1,7 @@
+
+let userWins = 0; // Contador para lances do usuário após a máquina
+const maxUserWins = 2; // Número de lances necessários para vencer
+
 // Definindo o preço inicial
 let currentPrice = 20.00;
 
@@ -85,4 +89,4 @@ let simulationInterval = setInterval(() => {
         document.getElementById('current-price').textContent = currentPrice.toFixed(2);
         document.getElementById('message').textContent = 'Outro usuário fez o maior lance de R$ ' + currentPrice.toFixed(2) + '!';
     }
-}, 10000); // Simula novos lances a cada 10 segundos
+}, 8000); // Simula novos lances a cada 10 segundos
